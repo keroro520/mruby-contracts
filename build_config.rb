@@ -108,12 +108,15 @@ MRuby::Build.new do |conf|
   # Use mruby-compiler to build other mrbgems
   conf.gem :core => "mruby-compiler"
 
+  conf.gem :core => "mruby-metaprog"
+  conf.gem :github => "mattn/mruby-json"
+
   conf.gem "mruby-ckb"
   conf.gem "mruby-secp256k1"
   conf.gem "mruby-blake2b"
 
-  conf.gem :core => "mruby-metaprog"
-  conf.gem :github => "xxuejie/mruby-json"
+  # Use mruby-ckb-ext to extend ckb related functions
+  conf.gem :github => "keroro520/mruby-ckb-ext"
 end
 
 MRuby::Build.new('riscv-gcc-spike') do |conf|
@@ -208,12 +211,15 @@ MRuby::Build.new('riscv-gcc-spike') do |conf|
   # Use mruby-compiler to build other mrbgems
   conf.gem :core => "mruby-compiler"
 
+  conf.gem :core => "mruby-metaprog"
+  conf.gem :github => "mattn/mruby-json"
+
   conf.gem "mruby-ckb"
   conf.gem "mruby-secp256k1"
   conf.gem "mruby-blake2b"
 
-  conf.gem :core => "mruby-metaprog"
-  conf.gem :github => "xxuejie/mruby-json"
+  # Use mruby-ckb-ext to extend ckb related functions
+  conf.gem :github => "keroro520/mruby-ckb-ext"
 end
 
 MRuby::Build.new('riscv-gcc') do |conf|
@@ -275,10 +281,13 @@ MRuby::Build.new('riscv-gcc') do |conf|
   # Use mruby-compiler to build other mrbgems
   conf.gem :core => "mruby-compiler"
 
+  conf.gem :core => "mruby-metaprog"
+  conf.gem :github => "mattn/mruby-json"
+
   conf.gem "mruby-ckb"
   conf.gem "mruby-secp256k1"
   conf.gem "mruby-blake2b"
 
-  conf.gem :core => "mruby-metaprog"
-  conf.gem :github => "xxuejie/mruby-json"
+  # Use mruby-ckb-ext to extend ckb related functions
+  conf.gem :github => "keroro520/mruby-ckb-ext"
 end
